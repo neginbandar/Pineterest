@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "preact": "^10.23.1",
+    "react-router-dom": "^6.26.2",
     "sass": "^1.79.4"
   },
   "devDependencies": {

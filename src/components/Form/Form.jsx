@@ -1,17 +1,24 @@
 import Button from "../Button/Button";
 import "./Form.scss";
 
-export default function Form(label, name, className, placeholder, type) {
-  <form>
-    <label>
-      {label}
-      <input
-        className={className}
-        name={name}
-        placeholder={placeholder}
-        type={type}
-      />
-    </label>
-    <Button></Button>
-  </form>;
+export default function Form(value, onChange, key, region) {
+  return (
+    <div>
+      <h1>Generate Facts and Images</h1>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Select a region:
+          <select value={selectedRegion} onChange={handleRegionChange} required>
+            <option value="">Select a region</option>
+            {regions.map((region, index) => (
+              <option key={index} value={region}>
+                {region}
+              </option>
+            ))}
+          </select>
+        </label>
+        <button type="submit">Get Facts and Images</button>
+      </form>
+    </div>
+  );
 }
