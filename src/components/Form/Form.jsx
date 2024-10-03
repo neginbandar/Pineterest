@@ -1,7 +1,7 @@
 import Button from "../Button/Button";
 import "./Form.scss";
 
-export default function Form(value, onChange, key, region) {
+export default function Form(value, key, region) {
   return (
     <div>
       <h1>Generate Facts and Images</h1>
@@ -17,7 +17,7 @@ export default function Form(value, onChange, key, region) {
             ))}
           </select>
         </label>
-        <button type="submit">Get Facts and Images</button>
+        <button type="submit"></button>
       </form>
     </div>
   );

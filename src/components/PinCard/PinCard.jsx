@@ -11,11 +11,9 @@ export default function PinCard({ title, src, desc }) {
         <h2 className="card__title">{title}</h2>
         <p className="card__description">{desc}</p>
 
-        <Button className="button--save" label="Save"></Button>
+        <Button className={"button--save"} label={"Save"}></Button>
       </div>
-      <Button className="button--ext" label="Resource">
-        Resource
-      </Button>
+      <Button className={"button--ext"} label={"Resource"}></Button>
     </div>
   );
 }
